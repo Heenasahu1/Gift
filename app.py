@@ -22,7 +22,7 @@ import streamlit as st
 ASSETS = Path(__file__).parent / "assets"
 
 st.set_page_config(
-    page_title="A Gift For You",
+    page_title="Small Gift For You",
     page_icon="🎁",
     layout="wide",
     initial_sidebar_state="collapsed",
@@ -380,8 +380,8 @@ def stage_landing():
             unsafe_allow_html=True,
         )
         st.markdown(
-            "<p class='sub-text'>This gift only unlocks for one very specific "
-            "person. Tell me who you are 👀</p>",
+            "<p class='sub-text'>This gift is for a very special person "
+            "person. Are you the one? 👀</p>",
             unsafe_allow_html=True,
         )
         with st.form("name_form"):
@@ -399,8 +399,9 @@ def stage_landing():
                 st.rerun()
             else:
                 st.warning(
-                    "Hmm... that name isn't on my very exclusive guest list 👀 "
                     "Try again?"
+                    "Khud ka naam to sahi likho"
+                    "I think I call you something else"
                 )
 
 
@@ -412,15 +413,15 @@ def stage_ready():
             unsafe_allow_html=True,
         )
         st.markdown(
-            "<p class='sub-text'>I've hidden a little surprise behind a few "
-            "questions only you can answer. Ready to play?</p>",
+            "<p class='sub-text'>Tumhare gift tak pahuchne k liye thoda wait krna padega "
+            "This will be easy for you. To shuru kare?</p>",
             unsafe_allow_html=True,
         )
         with st.form("ready_form"):
             st.markdown(
                 "<p style='text-align:center; margin:0 0 0.6rem 0; "
-                "color:#1b2a2e; font-weight:600;'>Answer 6 correctly to "
-                "unlock the picture and your gift.</p>",
+                "color:#1b2a2e; font-weight:600;'>I want 6 correct answers to "
+                "unlock a special birthday wish & your gift.</p>",
                 unsafe_allow_html=True,
             )
             go = st.form_submit_button("I'm Ready! 🎉")
