@@ -179,12 +179,12 @@ def inject_css():
     }}
     .feedback-correct {{
         background: rgba(125, 191, 132, 0.28);
-        color: #1f5e23;
+        color: #F8F8F8;
         border: 1px solid rgba(58, 138, 65, 0.45);
     }}
     .feedback-wrong {{
         background: rgba(232, 167, 152, 0.32);
-        color: #7a2c1d;
+        color: #F8F8F8;
         border: 1px solid rgba(196, 87, 60, 0.45);
     }}
 
