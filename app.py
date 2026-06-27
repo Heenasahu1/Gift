@@ -77,7 +77,7 @@ FINAL_MESSAGE = load_message()
 # Fun feedback lines
 # --------------------------------------------------------------------------
 CORRECT_MESSAGES = [
-    "Yesss! 😍 You really know me too well, {name}!",
+    "Aww! 😍 Tumko yaad tha, {name}!",
     "Correct! 🥳 My heart just did a little dance.",
     "Wah wah! 👏 Topper of the 'Knowing Me' exam!",
     "That's right! 😘 One step closer to your surprise.",
@@ -518,17 +518,15 @@ def stage_gift():
         f"<h1 class='hero-title'>For You, {st.session_state.verified_name} 🎁</h1>",
         unsafe_allow_html=True,
     )
-    st.markdown(
-        f"""
-        <iframe
-            src="data:application/pdf;base64,{PDF_B64}#toolbar=0&navpanes=0"
-            width="100%" height="850"
-            style="border:none; border-radius:18px;
-                   box-shadow:0 14px 40px rgba(0,0,0,0.45);">
-        </iframe>
-        """,
-        unsafe_allow_html=True,
-    )
+
+    with open(ASSETS / "gift.pdf", "rb") as pdf_file:
+        st.download_button(
+            label="🎁 Open Your Gift",
+            data=pdf_file,
+            file_name="gift.pdf",
+            mime="application/pdf",
+            use_container_width=True,
+        )
 
 
 # --------------------------------------------------------------------------
