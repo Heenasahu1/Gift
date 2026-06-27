@@ -381,7 +381,7 @@ def stage_landing():
         )
         st.markdown(
             "<p class='sub-text'>This gift is for a very special person "
-            "person. Are you the one? 👀</p>",
+            "Are you the one? 👀</p>",
             unsafe_allow_html=True,
         )
         with st.form("name_form"):
