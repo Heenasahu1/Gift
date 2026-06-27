@@ -22,7 +22,7 @@ import streamlit as st
 ASSETS = Path(__file__).parent / "assets"
 
 st.set_page_config(
-    page_title="Small Gift For You",
+    page_title="Happy Birthday!!",
     page_icon="🎁",
     layout="wide",
     initial_sidebar_state="collapsed",
@@ -78,24 +78,24 @@ FINAL_MESSAGE = load_message()
 # --------------------------------------------------------------------------
 CORRECT_MESSAGES = [
     "Aww! 😍 Tumko yaad tha, {name}!",
-    "Correct! 🥳 My heart just did a little dance.",
+    "Kya baat hai {name}!.",
     "Wah wah! 👏 Topper of the 'Knowing Me' exam!",
-    "That's right! 😘 One step closer to your surprise.",
-    "Spot on! 💕 I'm fully convinced you're the one for me.",
-    "Correct answer detected. Cuteness levels rising. 📈❤️",
-    "Aww, you actually pay attention to me! 🥰",
-    "Yep! 🎯 Somebody's getting extra hugs for this.",
+    "Ikzactly.",
+    "Haa ye to pata hona hi chahiye tha tumko.",
+    "Ye hui na baat. 📈❤️",
+    "Itna kaise dhyaan se meri baatein yaad rehti hai tumhe! 🥰",
+    "Iske liye to tumko bahot sare hugs milne chahiye.",
 ]
 
 WRONG_MESSAGES = [
     "Galat! 😤 Itna bhi nahi pata mere baare mein?",
-    "Nope! 🙈 Someone's getting an earful later.",
-    "Wrong answer! But I still love you, somehow. 🥲",
-    "Try again, dil se sochiye na! 💭",
-    "Hmm, not quite. Think harder, Sherlock! 🔍",
-    "That's a no. 😅 Were you even paying attention?",
-    "Close, but my heart says otherwise. ❌",
-    "Wrong! But don't worry, I forgive you. For now. 😏",
+    "Nope! 🙈",
+    "Wrong answer! Koi dusra question try kro. 🥲",
+    "Try again, yaad kro {name}! 💭",
+    "Hmm, ye kaise galat hua tumse! 🔍",
+    "Chalo chhodo, tumse nahi ho payega shayad",
+    "Tera dhyan kidhar hai, ye tera answer galat hai",
+    "Common yarr, itne bhi hard questions nahi diye h maine. 😏",
 ]
 
 # --------------------------------------------------------------------------
