@@ -413,7 +413,7 @@ def stage_ready():
             unsafe_allow_html=True,
         )
         st.markdown(
-            "<p class='sub-text'>Tumhare gift tak pahuchne k liye thoda wait krna padega "
+            "<p class='sub-text'>Tumhare gift tak pahuchne k liye thoda wait krna padega. "
             "This will be easy for you. To shuru kare?</p>",
             unsafe_allow_html=True,
         )
@@ -424,7 +424,7 @@ def stage_ready():
                 "unlock a special birthday wish & your gift.</p>",
                 unsafe_allow_html=True,
             )
-            go = st.form_submit_button("I'm Ready! 🎉")
+            go = st.form_submit_button("Chalo, chalo!")
         if go:
             start_quiz()
             st.rerun()
@@ -448,7 +448,7 @@ def stage_quiz():
 
     with left:
         st.markdown(
-            f"<h2 class='hero-title' style='font-size:1.7rem;'>Question Time, "
+            f"<h2 class='hero-title' style='font-size:1.7rem;'>Sab sawaal sahi sahi answer karne hai "
             f"{st.session_state.verified_name} 💭</h2>",
             unsafe_allow_html=True,
         )
@@ -488,7 +488,7 @@ def stage_complete():
     col = st.columns([1, 1.3, 1])[1]
     with col:
         st.markdown(
-            "<h1 class='hero-title'>The Full Picture 🤍</h1>",
+            "<h1 class='hero-title'>Remember this day? Sunset wali place pe sunrise ka wait kr rhe the hum :) </h1>",
             unsafe_allow_html=True,
         )
         st.markdown(
