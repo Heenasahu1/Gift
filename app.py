@@ -488,7 +488,7 @@ def stage_complete():
     col = st.columns([1, 1.3, 1])[1]
     with col:
         st.markdown(
-            "<h1 class='hero-title'>Remember this day? Sunset wali place pe sunrise ka wait kr rhe the hum :) </h1>",
+            "<h1 class='hero-title'>From Sunrise to Sunset, Thank You for being there with me :) </h1>",
             unsafe_allow_html=True,
         )
         st.markdown(
